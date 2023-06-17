@@ -19,7 +19,7 @@ export const Modal = () => {
   };
 
   return (
-    <div>
+    <>
       <Button variant="outlined" onClick={handleClickOpen}>
         Open form dialog
       </Button>
@@ -49,6 +49,6 @@ export const Modal = () => {
           <Button onClick={handleClose}>Subscribe</Button>
         </DialogActions>
       </Dialog>
-    </div>
+    </>
   );
 };
