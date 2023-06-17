@@ -25,11 +25,11 @@ export const Header = () => {
       <Container maxWidth="xl">
         <Toolbar
           disableGutters
+          py={1}
           sx={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            py: 1,
           }}
         >
           <Stack direction="row" spacing={2}>

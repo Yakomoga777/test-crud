@@ -1,26 +1,17 @@
 import { Outlet } from 'react-router-dom';
-import { Box, Container } from '@mui/material';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 
-import { Header } from 'layout/Header';
 import { Footer } from 'layout/Footer';
+import { Header } from 'layout/Header';
 
 export const Layout = () => {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh',
-      }}
-    >
+    <Stack direction={'column'} minHeight={'100vh'}>
       <Header />
 
-      <Box
-        component="main"
-        sx={{
-          flexGrow: 1,
-        }}
-      >
+      <Box component="main" flexGrow={1}>
         <Box component={'section'} py={8}>
           <Container maxWidth="lg">
             <Outlet />
@@ -29,6 +20,6 @@ export const Layout = () => {
       </Box>
 
       <Footer />
-    </Box>
+    </Stack>
   );
 };
