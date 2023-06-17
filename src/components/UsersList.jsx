@@ -15,6 +15,8 @@ export const UsersList = ({ users = [] }) => {
     color: theme.palette.text.secondary,
   }));
 
+  console.log(users);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
