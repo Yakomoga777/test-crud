@@ -5,12 +5,13 @@ import { Provider } from 'react-redux';
 
 import { App } from 'components/App';
 import { store } from 'redux/store';
+import { ROUTES } from 'utils/routes';
 
 import 'modern-normalize';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/test-crud">
+  <BrowserRouter basename={ROUTES.HOMEPAGE}>
     <Provider store={store}>
       <React.StrictMode>
         <App />
